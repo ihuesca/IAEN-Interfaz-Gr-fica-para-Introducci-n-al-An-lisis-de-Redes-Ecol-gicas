@@ -51,6 +51,8 @@ Tabla 1. Lista de paquetes requeridos
 
 ## **3 Cargar la Interfaz**
 
+
+
 Una vez que se llevó a cabo el proceso de instalación del paquete y verificado que se haya realizado exitosamente, los pasos que prosiguen son los siguientes: en primer lugar hay que cargar el paquete y posteriormente utilizar la función correspondiente para poder visualizar la interfaz. La instalación sólo se realiza una vez en cada versión instalada de R o en su caso R-Studio, así como para cargar el paquete sólo se hace una vez en cada espacio de trabajo abierto, tal como se muestra a continuación:
 
 
@@ -74,7 +76,7 @@ En la *Figura 1* se ilustra la estructura interactiva de la interfaz gráfica cu
 
 En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de funciones tales como la pestaña de ”*File*” que contiene funciones de importación y exportación de datos. La pestaña de ”*Statistics*”, contiene funciones de análisis de datos para las diferentes tipos de redes (binaria, ponderada y bipartita). La pestaña de ”*Simulation*” muestra una ventana con opciones para crear diferentes tipos de redes alimenticias y realizar funciones utilizadas en mundos pequeños. La pestaña de ”*Graphs*” muestra una gama de gráficos que se pueden realizar para los diferentes tipos de redes. Por último la pestaña de ”*Help*” proporciona información general del paquete.
 
-##**4 Importación de datos**
+## **4 Importación de datos**
 
 
 
@@ -82,19 +84,19 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
 
-- [x] Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+-- Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
 
-- [x] Contener valores numéricos.
+-- Contener valores numéricos.
 
-- [ ] Evitar celdas vacías.
+-- Evitar celdas vacías.
 
-- [ ] Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
+-- Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
 
-- [ ] Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
+-- Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
 
-- [ ] La columna Outputs es la suma de respiraciones y exportaciones, este vector es opcional.
+-- La columna Outputs es la suma de respiraciones y exportaciones, este vector es opcional.
 
-- [ ] La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
+-- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
 
 
 
