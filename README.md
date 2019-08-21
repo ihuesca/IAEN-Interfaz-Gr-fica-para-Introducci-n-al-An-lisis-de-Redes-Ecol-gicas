@@ -164,6 +164,50 @@ Por otra parte, para importar una matriz adyacente bipartita se deben selecciona
 
 
 
+Figura 5. Estadísticas para una red ponderada
+
+Para realizar diferentes estadísticas de una red ponderada se tiene que seleccionar las pestañas *Statistics> Weighted*, posteriormente aparecerá la ventana de la *Figura 5*. La pestaña de Weighted se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red ponderada. La ventana está dividida en tres secciones, la sección de ”*General*” que contiene métricas de la red como lo son atributos y análisis de flujos, la sección de ”*Topology*” que contiene un conjunto de centralidades diferentes y el apartado de ”*Ecological Indices*” que contiene indicadores específicos para una red trófica. La Pestaña ”*Name*” muestra el nombre de todas las redes ponderadas que han sido cargadas en la interfaz, se tiene que seleccionar la red con la que se desea realizar los análisis.
+
+Algunos atributos y las centralidades de closeness, betweenness y degree fueros utilizadas empleando el paquete **tnet**, mientras que las otras centralidades y las demás funciones que hacen hincapié en análisis de redes ecológicas se realizan mediante el paquete **enaR**. Para conocer la descripción de cada resultado favor de ver la documentación de los paquetes **tnet** (Opsahl, 2009) y **enaR** (Lau et al., 2017).
+
+Por último, contiene un conjunto de botones para seleccionar y deseleccionar todas las categorías incluidas, y un botón de aceptar y cancelar la corrida de los análisis. Al hacer clic en aceptar aparecerá un ícono de carga en la parte inferior izquierda de la interfaz con el fin de notificar que algunos análisis pueden requerir largo tiempo de espera, posteriormente se mostrarán los resultados en la ventana de ”*Result*” a través de sub-pestañas.
+
+
+
+Figura 6. Estadísticas para una red ponderada
+
+Para realizar diferentes estadísticos de una red no ponderada hay que seleccionar las pestañas *Statistics> Unweighted* dentro de la interfaz, cabe mencionar que dicha pestaña solo se activa cuando se ha importado una matriz adyacente de éste tipo. La ventana está dividida en tres secciones ”*General*”, ”*Topology*” y ”*Ecological Indices*”. Para el cálculo de atributos se emplearon los paquetes **cheddar**, **igraph** y **network**. En atributos se agregaron tres funciones sencillas, una que calcula el porcentaje de especies herbívoras, otra que muestra el porcentaje de especies que están incluidas en loops o ciclos el cual fue obtenido identificando los nodos incluidos en la diagonal de la multiplicación de la misma matriz *n* veces y por último la proporción de especies que se alimentan de presas de más de un nivel trófico.
+
+En el apartado de ”*Topology*” se muestra un grupo de centralidades así como la función de reachability, las centralidades de betweenness, closeness y degree fueron utilizadas emplendo el paquete **igraph**, mientras que las demás se utilizaron empleando el paquete **sna**. La sección de ”*Ecological Indices*” contiene los cálculos del nivel trófico e indicadores de omnivoría para ello se empleó paquete cheddar, se incluyó un indicador de omnivoría mencionado por Goldwasser and Roughgarden (1993) el cual se basa en la media de las desviaciones estándar de las longitudes de cadena de cada especie hasta una especie basal.
+
+La pestanña de ”*Name*” muestra todas las matrices binarias que han sido cargadas a la interfaz de las cuales se tiene que seleccionar alguna para realizar los análisis. Para ver las especificaciones de cada resultado favor de consultar la documentación de **igraph** (Csardi and Nepusz, 2006), **sna** (Butts, 2016), **cheddar** (Hudson et al., 2018) y **network** (Butts, 2015). De la misma forma que en la ventana de la Figura 6 se incluyen botones de seleccionar y deseleccionar las casillas y un botón de aceptar y cancelar, en el que al hacer clic en el botón de aceptar se incluirá un ícono en la parte inferior izquierda que indica que el programa está ejecutando los algoritmos correspondientes y al finalizar aparecerán los resultados en sub-pestañas en el apartado de ”*Result*”.
+
+
+
+Figura 7. Estadísticas para una red bipartita
+
+Para efectuar estadísticos de una red bipartita hay que seleccionar las pestañas *Statistics>Bipartite*, dicha pestaña se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red bipartita. Al hacer clic en las pestañas anteriores apare-cerá una ventana como la de la Figura 8. La ventana está seccionada en dos partes, la primera contiene atributos generales de la red y la segunda llamada ”*Topology*” contiene funciones más específicas, ambos apartados incluyen funciones del paquete **bipartite** (Dormann et al., 2008) por lo que para conocer el contenido de cada indicador favor de revisar la descripción de las funciones en su documentación.
+
+De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pestaña de ”*Name*” para seleccionar la red con la que se desea ejecutar las funciones y se incluyen botones de seleccionar y deseleccionar las casillas y un boton de aceptar y cancelar con las mismas funcionalidades.
+
+
+
+Figura 8. Ventana de simulación
+
+Para realizar diferentes funciones de simulación se tienen que seleccionar las pestañas de *Simulations> Simulation*s y así visualizar la ventana mostrada en la Figura 9. La ventana contiene dos secciones una para crear redes alimenticias aleatorias y otra para ejecutar funciones empleadas en redes de mundos pequeños. Posee tres métodos para crear redes alimenticias, el modelo aleatorio, el modelo de cascada y el modelo de nicho, de los cuales se puede calcular los atributos y centralidades, a su vez se puede realizar éste procedimiento *n* veces y como resultado se obtendrá una matriz aleatoria y el promedio de atributos y centralidades de las *n* repeticiones, también se incluye una matriz con el nuúmero de veces que una interacción apareció en una posición específica.
+
+Los modelos de redes alimenticias poseen como argumento el número de nodos o especies, el valor de la conectividad en una escala de 0 a 1 y un valor de porcentaje de tolerancia que hace referencia al intervalo de aceptación para la conectividad, es decir, en cada simulación la función sólo incluye redes que estén en ese intervalo del parámetro con la finalidad de que el parámetro sea consistente, tal como se menciona en Williams and Martinez (2000), por defecto 3%.
+
+El modelo aleatorio (Williams and Martinez, 2000) estaá basado en el modelo de Erdos and Rényi (1960), el cual consiste en crear una red con n vértices representando el número de especies (*S*), donde todos los enlaces entre especies tienen la misma probabilidad *P* de existir igual a la conectividad (*C*) de la red empírica. En el modelo de cascada (Cohen and Newman (1985); Williams and Martinez (2000)), cada especie tiene una probabilidad *P=2CS/(S-1)* de consumir otra especie con valores de nicho más bajos. El modelo tiene una jerarquía estricta de alimentación ya que prohíbe la presencia de canibalismo y ciclos.
+
+El modelo de nicho Williams and Martinez (2000) asigna a cada especie un valor de nicho (*ni*) en el intervalo [0,1]. Cada especie se alimenta de las especies que se encuentran en el rango de valores de nicho (*ri*) obtenidos de la distribución beta, los cuales son colocados mediante un valor de centro *ci*, permitiendo la presencia de canibalismo y bucles. El centro *ci* del rango de alimentación *ri* es un número aleatorio uniforme en el intervalo de *ri/2* y el valor mínimo entre *ni* y *1-ri/2*. Para garantizar que cada red contenga al menos una especie basal, la especie con el valor de ni maás pequeño tiene valor de rango igual a cero.
+
+Los algoritmos de los tres modelos anteriormente mencionados fueron implementados en la interfaz gráfica a través de algoritmos propios, donde se agregan funciones que evitan la presencia de nodos con dobles ceros y/o desconectados.
+
+Por otro lado, en la segunda sección se incluye el cálculo de la longitud del camino característico (*L*) y el coeficiente de cluster (*C*), ambos parámetros son empleados para contrastar si una red se comporta o no como un mundo pequeño (Watts and Strogatz, 1998). Para la creación de los grafos aleatorio se empleó la función **igraph::sample_gnm** que genera grafos de acuerdo con el modelo de Erdos-Renyi, para el coeficiente de cluster se utilizó la función **igraph::transitivity** y para la longitud promedio del camino más corto la función **igraph::mean_distance**, las tres funciones pertenecen al paquete **igraph** (Csardi and Nepusz, 2006).
+
+Los argumentos requeridos en la interfaz gráfica para obtener los parámetros *L* y *C* son el número de nodos, el número de enlaces y el número de repeticiones que se desea realizar para optimizar el resultado. Como resultado se obtiene una tabla con los valores de *L* y *C* de cada una de las repeticiones así como el promedio. Al hacer clic en el botón de aceptar aparecerán los resultados en la pestaña de ”*Result*” a través de sub-pestañas ya sea de la creación de redes alimenticias o de los parámetros de mundos pequeños.
+
 
 
 
