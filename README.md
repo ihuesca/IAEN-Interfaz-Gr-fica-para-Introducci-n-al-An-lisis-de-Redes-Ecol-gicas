@@ -62,11 +62,13 @@ IAEN()
 
 
 
-| ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/GUI.PNG) | ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
+| ![GUI](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/GUI.PNG) | ![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
+| ![Result](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
 
 Figura 1: Interfaz gráfica de usuario
+
+
 
 En la *Figura 1* se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de **R-Studio** donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestan ̃a nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
 
@@ -80,9 +82,9 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
 
-- [ ] Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+- [x] Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
 
-- [ ] Contener valores numéricos.
+- [x] Contener valores numéricos.
 
 - [ ] Evitar celdas vacías.
 
