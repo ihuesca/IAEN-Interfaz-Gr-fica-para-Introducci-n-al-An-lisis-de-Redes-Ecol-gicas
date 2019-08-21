@@ -66,7 +66,7 @@ IAEN()
 
 
 
-| ![GUI](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/GUI.PNG) | ![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
+| [](https://github.com/ihuesca/IAEN-Manual/blob/master/GUIimages/GUI.PNG) | ![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Result](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
 
