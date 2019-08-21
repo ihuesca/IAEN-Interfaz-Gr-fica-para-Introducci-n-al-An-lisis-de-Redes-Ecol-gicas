@@ -66,7 +66,7 @@ IAEN()
 
 
 
-| [](https://github.com/ihuesca/IAEN-Manual/blob/master/GUIimages/GUI.PNG) | ![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
+| <img src="GUIimages/GUI.PNG" alt="Cinder">                   | A clean, responsive theme for MkDocs" width="728"></a>![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Result](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
 
