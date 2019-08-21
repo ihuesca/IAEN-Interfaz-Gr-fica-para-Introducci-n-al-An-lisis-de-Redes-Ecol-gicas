@@ -22,3 +22,30 @@ La lista de dependencias que se requieren para que la interfaz se ejecute correc
 
 Tabla 1. Lista de paquetes requeridos 
 
+| Paquetería                        | Descripción                                           |
+| --------------------------------- | ----------------------------------------------------- |
+| RGtk2 (Lawrence and Temple, 2010) | Herramientas para la creación de interfaces gráficas  |
+| cairoDevice (Lawrence, 2017)      |                                                       |
+|                                   |                                                       |
+| enaR (Lau et al., 2017)           | Funciones para análisis redes ecológicas              |
+| cheddar (Hudson et al., 2018)     |                                                       |
+| bipartite (Dormann et al., 2008)  |                                                       |
+|                                   |                                                       |
+| readxl (Wickham and Bryan, 2018)  | Importación y exportación de datos                    |
+| writexl (Ooms, 2018)              |                                                       |
+|                                   |                                                       |
+| network (Butts, 2015)             | Funciones para análisis de redes en general           |
+| igraph (Csardi and Nepusz, 2006)  |                                                       |
+| sna (Butts, 2016)                 |                                                       |
+| tnet (Opsahl, 2009)               |                                                       |
+|                                   |                                                       |
+| ggplot2 (Wickham, 2016)           | Funciones para la edición y visualización de gráficos |
+| ggraph (Pedersen, 2018)           |                                                       |
+| gplots (Warnes et al., 2016)      |                                                       |
+| scales (Wickham, 2017)            |                                                       |
+|                                   |                                                       |
+| reshape (Wickham, 2007)           | Reestructura de datos                                 |
+|                                   |                                                       |
+| pryr (Wickham, 2018)              | Crear enlaces activos                                 |
+|                                   |                                                       |
+
