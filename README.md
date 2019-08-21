@@ -49,3 +49,18 @@ Tabla 1. Lista de paquetes requeridos
 | pryr (Wickham, 2018)              | Crear enlaces activos                                 |
 |                                   |                                                       |
 
+## **3 Cargar la Interfaz**
+
+Una vez que se llevó a cabo el proceso de instalación del paquete y verificado que se haya realizado exitosamente, los pasos que prosiguen son los siguientes: en primer lugar hay que cargar el paquete y posteriormente utilizar la función correspondiente para poder visualizar la interfaz. La instalación sólo se realiza una vez en cada versión instalada de R o en su caso R-Studio, así como para cargar el paquete sólo se hace una vez en cada espacio de trabajo abierto, tal como se muestra a continuación:
+
+
+
+```bash
+library(IAEN)
+IAEN()
+```
+
+
+
+
+
