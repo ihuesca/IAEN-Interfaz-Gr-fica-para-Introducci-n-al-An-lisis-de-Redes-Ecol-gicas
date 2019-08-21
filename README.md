@@ -1,5 +1,3 @@
-# **IAEN: Interfaz Gráfica para Introducción al Análisis de Redes Ecológicas** 
-
 ## **1 Instroducción**
 
 
@@ -94,7 +92,6 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 -- Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
 
--- La columna Outputs es la suma de respiraciones y exportaciones, este vector es opcional.
 -- La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
 
 -- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
