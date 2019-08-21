@@ -62,5 +62,41 @@ IAEN()
 
 
 
+| ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/GUI.PNG) | ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
+
+Figura 1: Interfaz gráfica de usuario
+
+En la *Figura 1* se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de **R-Studio** donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestan ̃a nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
+
+En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de funciones tales como la pestaña de ”*File*” que contiene funciones de importación y exportación de datos. La pestaña de ”*Statistics*”, contiene funciones de análisis de datos para las diferentes tipos de redes (binaria, ponderada y bipartita). La pestaña de ”*Simulation*” muestra una ventana con opciones para crear diferentes tipos de redes alimenticias y realizar funciones utilizadas en mundos pequeños. La pestaña de ”*Graphs*” muestra una gama de gráficos que se pueden realizar para los diferentes tipos de redes. Por último la pestaña de ”*Help*” proporciona información general del paquete.
+
+##**4 Importación de datos**
+
+
+
+- *Matriz adyacente de una red ponderada*
+
+Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
+
+- [ ] Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+
+- [ ] Contener valores numéricos.
+
+- [ ] Evitar celdas vacías.
+
+- [ ] Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
+
+- [ ] Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
+
+- [ ] La columna Outputs es la suma de respiraciones y exportaciones, este vector es opcional.
+
+- [ ] La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
+
+
+
+
+
 
 
