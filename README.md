@@ -95,8 +95,75 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 -- Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
 
 -- La columna Outputs es la suma de respiraciones y exportaciones, este vector es opcional.
+-- La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
 
 -- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
+
+
+
+![ImportW](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportW.PNG)
+
+Figura 2. Ventana para impotar una matriz ponderada
+
+Para poder importar una matriz ponderada dentro de la interfaz se tiene que seleccionar las pestañas *Data> Import> Weighted*, siguiendo éstos pasos aparecerá una ventana como la *Figura 2,* donde los elementos que la conforman son un grupo de secciones que tienen la finalidad de mostrar que los vectores cargados estén en el orden adecuado. La funcionalidad de la ventana está resumida en los siguientes pasos:
+
+-- Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
+
+-- Poner nombre al nuevo objeto, por defecto Weighted.
+
+-- Los primeros vectores de la matriz aparecerán en la sección de "*Nodes*".
+
+-- En automático se acomoda el resto de vectores en cada una de las secciones.
+
+-- "*Matrix*", "*Input* "y "*Export*" son obligatorias, las demás entradas son opcionales.
+
+-- Verificar con el botón *"Check* "que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
+
+-- La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función **enaR::balance**.
+
+-- Por último seleccionar el botón "*Ok*" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "*Data*".
+
+
+
+- *Matriz adyacente de una red no ponderada*
+
+
+
+Respecto a la matriz no ponderada las especificaciones son diferentes, entre ellas se destaca que su estructura es binaria donde los valores que la conforman deben ser numéricos y únicamente se deben incluir valores con ceros y unos donde cero representa ausencia de interacción depredador-presa y uno representa presencia de interacción depredador-presa. Se tiene que evitar valores vacíos y se debe de incluir nombres de filas y columnas donde dichos nombres de preferencia no deben tener espacios y deben ser sim ́etricos. 
+
+
+
+![ImportU](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportU.PNG)
+
+Figura 3. Ventana para importar una matriz no ponderada
+
+Para importar una matriz adyacente no ponderada o dicho de otra forma una matriz binaria, se debe seleccionar las pestañas *Data> Import> Unweighted* desde la interfaz, al hacer esto se abrirá una ventana como la de la Figura 3. El botón de ”*Import*” tiene la funcionalidad de abrir una ventana para buscar el archivo que se desea importar, donde el formato a elegir puede ser de Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
+
+Se puede cambiar nombre de la matriz, por defecto Unweighted, dicho nombre servirá para nombrar diferentes objetos que se emplearán en los análisis posteriores y para identificarla dentro de la interfaz. Una vez seleccionado un archivo se activará el botón ”*Check*” el cual tiene la finalidad de revisar el cumplimiento de las especificaciones anteriormente mencionadas donde si no cumple al menos una, aparecerá una ventana emergente para mostrar los errores que se hayan encontrado, de ser éste el caso se tiene que revisar y corregir los datos de entrada.
+
+
+
+- *Matriz adyacente de una red bipartita*
+
+  
+
+Los pasos a seguir para importar una matriz bipartita son muy parecidos a los de una matriz binaria, ya que las especificaciones son: incluir nombres de filas y columnas preferentemente sin espacios, evitar valores vacíos y contener valores numéricos ya sean binarios (ceros y unos) o ponderados. La única diferencia es que puede ser de dimensión pxq ya que éste tipo redes no necesariamente tienen que ser simétricas debido a que no representan interacciones tróficas.
+
+
+
+![ImportB](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportB.PNG)
+
+Figura 4. Ventana para importar una matriz bipartita
+
+
+
+Por otra parte, para importar una matriz adyacente bipartita se deben seleccionar las pestañas *Data> Import> Bipartite*. La ventana resultante (Figura 4) es semejante a la de una matriz no ponderada, sólo que el nombre por defecto es Bipartite y las especificaciones que evalúa el botón ”*Check*” son diferentes. El botón ”*Import*” tiene la misma funcionalidad de mostrar una ventana para buscar el archivo que se desea cargar con opciones de formato de Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt). Al hacer clic en "*Aceptar*", se crearán los objetos necesarios para poder realizar los análisis que se soliciten posteriormente y se visualizarán los datos en la interfaz en la pestaña de ”*Data*”.
+
+## **5 Métricas o Estadísticas**
+
+
+
+
 
 
 
