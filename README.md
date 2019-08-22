@@ -4,8 +4,8 @@
 
 **Tabla de contenido**
 
-- [1 Introducción](##1 Introducción)
-- [2 Dependencias](#)
+- [1 Introducción](**1 Introducción**)
+- [2 Dependencias](https://github.com/ihuesca/IAEN-Manual/blob/master/README.md#1-introducci%C3%B3n)
 - [3 Cargar la interfaz](#)
 - [4 Importación de datos](#)
 - [5 Métricas o Estadísticas](##)
