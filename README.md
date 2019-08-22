@@ -118,7 +118,11 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 ![ImportW](https://user-images.githubusercontent.com/45604687/63484106-30710e00-c464-11e9-9d10-77c0e348e454.PNG)
 
-Figura 2. Ventana para impotar una matriz ponderada
+<p align="center">
+ Figura 2. Ventana para importar una matriz ponderada
+</p>
+
+
 
 Para poder importar una matriz ponderada dentro de la interfaz se tiene que seleccionar las pestañas *Data> Import> Weighted*, siguiendo éstos pasos aparecerá una ventana como la *Figura 2,* donde los elementos que la conforman son un grupo de secciones que tienen la finalidad de mostrar que los vectores cargados estén en el orden adecuado. La funcionalidad de la ventana está resumida en los siguientes pasos:
 
@@ -150,7 +154,9 @@ Respecto a la matriz no ponderada las especificaciones son diferentes, entre ell
 
 ![ImportU](https://user-images.githubusercontent.com/45604687/63484142-4979bf00-c464-11e9-8cc1-7887208d9dc9.PNG)
 
-Figura 3. Ventana para importar una matriz no ponderada
+<p align="center">
+ Figura 3. Ventana para importar una matriz no ponderada
+</p>
 
 Para importar una matriz adyacente no ponderada o dicho de otra forma una matriz binaria, se debe seleccionar las pestañas *Data> Import> Unweighted* desde la interfaz, al hacer esto se abrirá una ventana como la de la Figura 3. El botón de ”*Import*” tiene la funcionalidad de abrir una ventana para buscar el archivo que se desea importar, donde el formato a elegir puede ser de Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
 
@@ -168,7 +174,9 @@ Los pasos a seguir para importar una matriz bipartita son muy parecidos a los de
 
 ![ImportB](https://user-images.githubusercontent.com/45604687/63484156-5a2a3500-c464-11e9-9aa7-5bd14407ceae.PNG)
 
-Figura 4. Ventana para importar una matriz bipartita
+<p align="center">
+ Figura 4. Ventana para importar una matriz bipartita
+</p>
 
 
 
@@ -180,7 +188,11 @@ Por otra parte, para importar una matriz adyacente bipartita se deben selecciona
 
 ![StatW](https://user-images.githubusercontent.com/45604687/63484209-7b8b2100-c464-11e9-84a2-bdb4bfa57095.PNG)
 
-Figura 5. Estadísticas para una red ponderada
+<p align="center">
+ Figura 5. Estadísticas para una red ponderada
+</p>
+
+
 
 Para realizar diferentes estadísticas de una red ponderada se tiene que seleccionar las pestañas *Statistics> Weighted*, posteriormente aparecerá la ventana de la *Figura 5*. La pestaña de Weighted se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red ponderada. La ventana está dividida en tres secciones, la sección de ”*General*” que contiene métricas de la red como lo son atributos y análisis de flujos, la sección de ”*Topology*” que contiene un conjunto de centralidades diferentes y el apartado de ”*Ecological Indices*” que contiene indicadores específicos para una red trófica. La Pestaña ”*Name*” muestra el nombre de todas las redes ponderadas que han sido cargadas en la interfaz, se tiene que seleccionar la red con la que se desea realizar los análisis.
 
@@ -192,7 +204,11 @@ Por último, contiene un conjunto de botones para seleccionar y deseleccionar to
 
 ![StatU](https://user-images.githubusercontent.com/45604687/63484253-9b224980-c464-11e9-80ec-a1fd68a40ba8.PNG)
 
-Figura 6. Estadísticas para una red no ponderada
+<p align="center">
+ Figura 6. Estadísticas para una red no ponderada
+</p>
+
+
 
 Para realizar diferentes estadísticos de una red no ponderada hay que seleccionar las pestañas *Statistics> Unweighted* dentro de la interfaz, cabe mencionar que dicha pestaña solo se activa cuando se ha importado una matriz adyacente de éste tipo. La ventana está dividida en tres secciones ”*General*”, ”*Topology*” y ”*Ecological Indices*”. Para el cálculo de atributos se emplearon los paquetes **cheddar**, **igraph** y **network**. En atributos se agregaron tres funciones sencillas, una que calcula el porcentaje de especies herbívoras, otra que muestra el porcentaje de especies que están incluidas en loops o ciclos el cual fue obtenido identificando los nodos incluidos en la diagonal de la multiplicación de la misma matriz *n* veces y por último la proporción de especies que se alimentan de presas de más de un nivel trófico.
 
@@ -202,7 +218,9 @@ La pestanña de ”*Name*” muestra todas las matrices binarias que han sido ca
 
 ![StatB](https://user-images.githubusercontent.com/45604687/63484288-ad03ec80-c464-11e9-8d9b-2cb8af9994a3.PNG)
 
-Figura 7. Estadísticas para una red bipartita
+<p align="center">
+ Figura 7. Estadísticas para una red bipartita
+</p>
 
 Para efectuar estadísticos de una red bipartita hay que seleccionar las pestañas *Statistics>Bipartite*, dicha pestaña se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red bipartita. Al hacer clic en las pestañas anteriores apare-cerá una ventana como la de la Figura 8. La ventana está seccionada en dos partes, la primera contiene atributos generales de la red y la segunda llamada ”*Topology*” contiene funciones más específicas, ambos apartados incluyen funciones del paquete **bipartite** (Dormann et al., 2008) por lo que para conocer el contenido de cada indicador favor de revisar la descripción de las funciones en su documentación.
 
@@ -212,7 +230,9 @@ De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pesta�
 
 ![Simulation](https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG)
 
-Figura 8. Ventana de simulación
+<p align="center">
+ Figura 8. Ventana de simulación
+</p>
 
 Para realizar diferentes funciones de simulación se tienen que seleccionar las pestañas de *Simulations> Simulation*s y así visualizar la ventana mostrada en la Figura 9. La ventana contiene dos secciones una para crear redes alimenticias aleatorias y otra para ejecutar funciones empleadas en redes de mundos pequeños. Posee tres métodos para crear redes alimenticias, el modelo aleatorio, el modelo de cascada y el modelo de nicho, de los cuales se puede calcular los atributos y centralidades, a su vez se puede realizar éste procedimiento *n* veces y como resultado se obtendrá una matriz aleatoria y el promedio de atributos y centralidades de las *n* repeticiones, también se incluye una matriz con el nuúmero de veces que una interacción apareció en una posición específica.
 
@@ -242,7 +262,11 @@ Se puede abrir una ventana de un gráfico seleccionando el menú de gráficos lu
 
 
 
-Figura 10: Gráficos para cualquier tipo de red
+| ![P1Network](https://user-images.githubusercontent.com/45604687/63556592-11798700-c50b-11e9-9c4b-a2636fcd9f3f.PNG) | ![P2Heatmap](https://user-images.githubusercontent.com/45604687/63556615-22c29380-c50b-11e9-99db-f1110edcb416.PNG) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![P11HeatMapCluster](https://user-images.githubusercontent.com/45604687/63556730-877dee00-c50b-11e9-984c-2920147f6cc5.PNG) |                                                              |
+
+Figura 9: Gráficos para cualquier tipo de red
 
 En la Figura 11 se muestran los gráficos que se pueden realizar para cualquier tipo de red importada. Para la red se empleó el paquete **ggraph** que contiene funciones para graficar redes a través de **ggplot2**, donde si la matriz es bipartita los nodos se ordenan diferente. Las pestañas para realizar una red es *Graph>Network> gplot*. Los otros dos gráficos son mapas de calor que tienen la finalidad de representar gráficamente la matriz adyacente en el que se tienen que seleccionar las pestañas *Graph> Heat map>ggplot/heatmap.2* para poderlos realizar.
 
@@ -250,19 +274,29 @@ Uno de los argumentos para realizar un mapa de calor es si se desea incluir clus
 
 
 
-Figura 11: Gráficos para una red no ponderada
+| ![P3WebByCentrality](https://user-images.githubusercontent.com/45604687/63556838-e479a400-c50b-11e9-9ba1-e4d4b17f2083.PNG) | ![P4Span](https://user-images.githubusercontent.com/45604687/63556852-f5c2b080-c50b-11e9-96ca-7498b5a78a99.PNG) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![P6WebByLevel](https://user-images.githubusercontent.com/45604687/63556945-46d2a480-c50c-11e9-8c81-94857157c617.PNG) |                                                              |
+
+Figura 10: Gráficos para una red no ponderada
 
 
 
-En la Figura 12 se muestran los gra ́ficos que se pueden realizar para una red ponderada. Los gráficos de la red ordenada con respecto a alguna centralidad y mediante los niveles tróficos fueron empleados mediante la función por defecto del paquete **cheddar** uno mediante la función **cheddar::PlotNPS** y otro mediante la función **cheddar::PlotWebByLevel**, las pestañas para realizarlos son *Graphs> Unweighted Matrix> Centrality> PlotNPS* y *Graphs> Unweighted Matrix> Web By Level> PlotWeb- ByLevel* respectivamente. Para el cálculo de spanning tree se empleó la función **igraph::mst** del paquete **igraph** y para graficarlo el paquete **igraph** mediante las pestañas *Graphs> Unweighted Matrix> Spanning Tree> mst*.
+En la Figura 12 se muestran los gráficos que se pueden realizar para una red ponderada. Los gráficos de la red ordenada con respecto a alguna centralidad y mediante los niveles tróficos fueron empleados mediante la función por defecto del paquete **cheddar** uno mediante la función **cheddar::PlotNPS** y otro mediante la función **cheddar::PlotWebByLevel**, las pestañas para realizarlos son *Graphs> Unweighted Matrix> Centrality> PlotNPS* y *Graphs> Unweighted Matrix> Web By Level> PlotWeb- ByLevel* respectivamente. Para el cálculo de spanning tree se empleó la función **igraph::mst** del paquete **igraph** y para graficarlo el paquete **igraph** mediante las pestañas *Graphs> Unweighted Matrix> Spanning Tree> mst*.
 
 
 
-Figura 12. Gráfico de impacto para una red ponderada
+![P5Impact](https://user-images.githubusercontent.com/45604687/63557009-839e9b80-c50c-11e9-947f-46b36c5b05ad.PNG)
+
+Figura 11. Gráfico de impacto para una red ponderada
 
 En el caso de las redes ponderadas, el único gráfico incluido además de la red y el heatmap para representar la matriz adyacente es un mapa de calor realizado con funciones del paquete **ggplot2** para representa los impactos tróficos totales de una especie sobre otra mediante el algoritmo de Ulanowicz and Puccia (1990) implementado en el paquete **enaR** a través de la función **enaMTI**. Se incluye como argumento el color para valores negativos y positivos donde si los valores estén próximos a cero el color correspondiente se degradará hasta el color blanco. Un ejemplo de éste tipo de gráficos se muestra en la Figura 13 donde para poderlo realizar se tienen que seguir las siguientes pestañas *Graph> Weighted> Impact> ggplot*.
 
 
+
+| ![P7Incidence](https://user-images.githubusercontent.com/45604687/63557063-bea0cf00-c50c-11e9-8691-37061495cd46.PNG) | ![P8Bipartite](https://user-images.githubusercontent.com/45604687/63557073-ca8c9100-c50c-11e9-8fc3-196479bc95b1.PNG) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![P10Modularity2](https://user-images.githubusercontent.com/45604687/63557094-df692480-c50c-11e9-9517-23fd95562f13.PNG) | ![P9Modularity1](https://user-images.githubusercontent.com/45604687/63557108-ee4fd700-c50c-11e9-8b8a-73408bd1dbc6.PNG) |
 
 Figura 13: Gráficos para una red bipartita
 
