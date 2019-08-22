@@ -5,3 +5,13 @@ url: "https://ihuesca.github.io" # the base hostname & protocol for your site, e
 permalink: pretty
 exclude: ["README.md"]
 remote_theme: owner/name
+
+ github: [metadata]
+ encoding: UTF-8
+ kramdown:
+   input: GFM
+   hard_wrap: false
+ future: true
+ jailed: false
+ theme: jekyll-theme-primer
+ gfm_quirks: paragraph_end
