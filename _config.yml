@@ -20,7 +20,7 @@ scheme: Mist
 # - Be aware that setting too much fonts will cause site running slowly
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
-font: Times New Roman OS
+font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
