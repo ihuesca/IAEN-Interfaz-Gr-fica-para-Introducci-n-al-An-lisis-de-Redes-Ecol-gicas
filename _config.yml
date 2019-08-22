@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+body {
+      font-family: "Times New Roman", Times, serif;
+}
