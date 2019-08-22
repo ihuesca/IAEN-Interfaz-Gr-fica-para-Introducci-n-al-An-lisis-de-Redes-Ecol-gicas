@@ -208,6 +208,8 @@ Por otro lado, en la segunda sección se incluye el cálculo de la longitud del 
 
 Los argumentos requeridos en la interfaz gráfica para obtener los parámetros *L* y *C* son el número de nodos, el número de enlaces y el número de repeticiones que se desea realizar para optimizar el resultado. Como resultado se obtiene una tabla con los valores de *L* y *C* de cada una de las repeticiones así como el promedio. Al hacer clic en el botón de aceptar aparecerán los resultados en la pestaña de ”*Result*” a través de sub-pestañas ya sea de la creación de redes alimenticias o de los parámetros de mundos pequeños.
 
+![P1Network](https://user-images.githubusercontent.com/45604687/63476994-bc753c80-c448-11e9-874e-e4cd720396d9.PNG)
+
 
 
 
