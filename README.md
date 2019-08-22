@@ -5,7 +5,7 @@
 **Tabla de contenido**
 
 - [1 Introducción](#1-introducción)
-- [2 Dependencias](#2-Dependencias)
+- [2 Dependencias](#2-dependencias)
 - [3 Cargar la interfaz](#3-Cargar-la-interfaz)
 - [4 Importación de datos](#4-Importación-de-datos)
 - [5 Métricas o Estadísticas](#5-Métricas-o-Estadísticas)
