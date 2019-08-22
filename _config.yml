@@ -2,5 +2,3 @@ theme: jekyll-theme-primer
 title: [IAEN Manual]
 description: [Spanish version]
 
-plugins:
-  - jekyll-relative-links
