@@ -1,5 +1,1 @@
-markdown: redcarpet
-baseurl: /IAEN-Manual
-exclude: ["README.md"]
-
 theme: jekyll-theme-cayman
