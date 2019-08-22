@@ -9,8 +9,8 @@
 - [3 Cargar la interfaz](#3-Cargar-la-interfaz)
 - [4 Importación de datos](#4-Importación-de-datos)
 - [5 Métricas o Estadísticas](#5-Métricas-o-Estadísticas)
-
-
+- [6 Presentación de gráficos](#6-Presentación-de-gráficos)
+- [Referencias](#Referencias)
 
 
 
@@ -227,6 +227,52 @@ Los algoritmos de los tres modelos anteriormente mencionados fueron implementado
 Por otro lado, en la segunda sección se incluye el cálculo de la longitud del camino característico (*L*) y el coeficiente de cluster (*C*), ambos parámetros son empleados para contrastar si una red se comporta o no como un mundo pequeño (Watts and Strogatz, 1998). Para la creación de los grafos aleatorio se empleó la función **igraph::sample_gnm** que genera grafos de acuerdo con el modelo de Erdos-Renyi, para el coeficiente de cluster se utilizó la función **igraph::transitivity** y para la longitud promedio del camino más corto la función **igraph::mean_distance**, las tres funciones pertenecen al paquete **igraph** (Csardi and Nepusz, 2006).
 
 Los argumentos requeridos en la interfaz gráfica para obtener los parámetros *L* y *C* son el número de nodos, el número de enlaces y el número de repeticiones que se desea realizar para optimizar el resultado. Como resultado se obtiene una tabla con los valores de *L* y *C* de cada una de las repeticiones así como el promedio. Al hacer clic en el botón de aceptar aparecerán los resultados en la pestaña de ”*Result*” a través de sub-pestañas ya sea de la creación de redes alimenticias o de los parámetros de mundos pequeños.
+
+
+
+## **6 Presentación de gráficos**
+
+
+
+Cada gráfico contiene una ventana con un apartado de opciones que contiene diferentes parámetros básicos que se pueden alterar para la realización de los mismos, los más comunes es el tamaño de letra y de nodo, así como el color de letra y de los nodos. Varios gráficos tienen también por argumento el especificar si se quiere emplear el nombre original de los nodos o si se desea sustituir por números y en algunos casos sólo se puede utilizar números para identificar el nodo o únicamente puntos, depende del tipo de gráfico que se desea realizar, esto con la finalidad de no saturar el gráfico y que se pueda apreciar mejor los resultados.
+
+La cantidad de parámetros que se muestran en cada ventana dependerá del tipo de gráfico que se desee realizar. Además, contiene una pestaña que muestra las diferentes redes que han sido cargadas en la interfaz, si se desea correr un gráfico específicamente de una red no ponderadas entonces sólo aparecerán los nombres de ese tipo de red. En la parte inferior derecha de cada ventana se incluyen los botones de aceptar y cancelar.
+
+Se puede abrir una ventana de un gráfico seleccionando el menú de gráficos luego el tipo de red y por último el tipo de gráfico a realizar. Inicialmente las pestañas aparecen inactivas, para activarla se tiene que importar una red del mismo tipo. El menú de gráficos contiene el nombre de la función original de la paquetería que fue empleada con la finalidad de que el usuario pueda identificar la función correspondiente y saber que procedimiento se está llevando a cabo, dichos paquetes ya se mencionaron anteriormente. Todas las ventanas de los gráficos tienen en la parte superior izquierda, un par de botones un botón de guardar y otro de salir, también incluye una pestaña para seleccionar el formato en el que se desea guardar, entre los formatos disponibles se encuentran tiff, jpeg, png y eps.
+
+
+
+Figura 10: Gráficos para cualquier tipo de red
+
+En la Figura 11 se muestran los gráficos que se pueden realizar para cualquier tipo de red importada. Para la red se empleó el paquete **ggraph** que contiene funciones para graficar redes a través de **ggplot2**, donde si la matriz es bipartita los nodos se ordenan diferente. Las pestañas para realizar una red es *Graph>Network> gplot*. Los otros dos gráficos son mapas de calor que tienen la finalidad de representar gráficamente la matriz adyacente en el que se tienen que seleccionar las pestañas *Graph> Heat map>ggplot/heatmap.2* para poderlos realizar.
+
+Uno de los argumentos para realizar un mapa de calor es si se desea incluir cluster para filas y columnas o no. En el primer caso del mapa de calor con cluster se empleó la función headmap.2 del paquete **gplot**, además por defecto si la matriz adyacente es binaria emplea la distancia de Jaccard y el método de Ward, mientras que si la matriz adyacente es ponderada se utiliza la distancia euclidiana y el método de Ward. En el caso de que sólo se desee graficar el mapa de calor, se emplea el paquete **ggplot2**.
+
+
+
+Figura 11: Gráficos para una red no ponderada
+
+
+
+En la Figura 12 se muestran los gra ́ficos que se pueden realizar para una red ponderada. Los gráficos de la red ordenada con respecto a alguna centralidad y mediante los niveles tróficos fueron empleados mediante la función por defecto del paquete **cheddar** uno mediante la función **cheddar::PlotNPS** y otro mediante la función **cheddar::PlotWebByLevel**, las pestañas para realizarlos son *Graphs> Unweighted Matrix> Centrality> PlotNPS* y *Graphs> Unweighted Matrix> Web By Level> PlotWeb- ByLevel* respectivamente. Para el cálculo de spanning tree se empleó la función **igraph::mst** del paquete **igraph** y para graficarlo el paquete **igraph** mediante las pestañas *Graphs> Unweighted Matrix> Spanning Tree> mst*.
+
+
+
+Figura 12. Gráfico de impacto para una red ponderada
+
+En el caso de las redes ponderadas, el único gráfico incluido además de la red y el heatmap para representar la matriz adyacente es un mapa de calor realizado con funciones del paquete **ggplot2** para representa los impactos tróficos totales de una especie sobre otra mediante el algoritmo de Ulanowicz and Puccia (1990) implementado en el paquete **enaR** a través de la función **enaMTI**. Se incluye como argumento el color para valores negativos y positivos donde si los valores estén próximos a cero el color correspondiente se degradará hasta el color blanco. Un ejemplo de éste tipo de gráficos se muestra en la Figura 13 donde para poderlo realizar se tienen que seguir las siguientes pestañas *Graph> Weighted> Impact> ggplot*.
+
+
+
+Figura 13: Gráficos para una red bipartita
+
+En la Figura 14 se muestran los gráficos que se pueden realizar para una red bipartita, el primero es una red de incidencia el cual hace una distinción a través de las figuras para diferencias las filas y columnas de la matriz adyacente, dicho gráfico fue utilizado empleando el paquete **igraph** mediante la función graph.incidence y se puede realizar mediante las pestañas **Graphs> Bipartite Matrix> Network> graph.incidence**. La red bipartita se utilizó empleando el paquete **bipartite** ya que es una forma clara de visualizar las ponderaciones en éste tipo de redes y se puede realizar mediante las pestañas **Graphs> Bipartite Matrix> Plot Web> plotweb**.
+
+Para la visualización de la modularidad de la red se emplearon dos formas, una mediante un heatmap donde a través de una cuadricula se diferencian los cluster y otra mediante una red con los nodos ordenados respecto al grupo al que pertenecen en el que para diferencias un grupo de otro se utilizó un gama de colores diferentes, ambos gráficos se realizaron empleando el paquete **ggplot2** y se pueden realizar a través de las pestañas **Graphs> Bipartite Matrix> Modularity> ggplot**. En la realización de un gráfico de modularidad primero se tiene que hacer el cálculo en la ventana de estadísticas para una red bipartita el cual empleará la función **bipartite::computeModules**. La ventana del gráfico en vez de mostrar una pestaña con los nombres de las redes bipartitas importadas mostrará el *id* de los resultados de modularidad que estén en los resultados.
+
+
+
+## **Referencias**
 
 
 
