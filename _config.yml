@@ -1,17 +1,4 @@
-title: Just the Docs
-description: A Jekyll theme for documentation
-baseurl: "/IAEN-Manual" # the subpath of your site, e.g. /blog
-url: "https://ihuesca.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: pretty
+markdown: redcarpet
+baseurl: /IAEN-Manual
 exclude: ["README.md"]
-remote_theme: owner/name
-
- github: [metadata]
- encoding: UTF-8
- kramdown:
-   input: GFM
-   hard_wrap: false
- future: true
- jailed: false
- theme: jekyll-theme-primer
- gfm_quirks: paragraph_end
+theme: jekyll-theme-primer
