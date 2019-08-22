@@ -274,7 +274,7 @@ Para la visualización de la modularidad de la red se emplearon dos formas, una 
 
 
 
-Butts, C.T. (2015). *network: Classes for Relational Data*. R package version 1.13.0.1. The Statnet Project (http://statnet.org). url: http://CRAN.R-project.org/package=network.
+Butts, C.T. (2015). *network: Classes for Relational Data*. R package version 1.13.0.1. The Statnet Project ([http://statnet.org](http://statnet.org)). url: [http://CRAN.R-project.org/package=network](http://CRAN.R-project.org/package=network).
 
 Butts, C.T. (2016). *sna: Tools for Social Network Analysis*. R package version 2.4. url: https://CRAN.R-project.org/package=sna.
 
@@ -304,7 +304,7 @@ Makiyama, K. (2018). *githubinstall: A Helpful Way to Install R Packages Hosted 
 
 Ooms, J. (2018). *writexl: Export Data Frames to Excel 'xlsx' Format. R package version 1.0*. url: https://CRAN.R-project.org/package=writexl.
 
-Opsahl, T. (2009). *Structure and Evolution of Weighted Networks*. University of London (Queen Mary College), London, UK, pp. 104-122. url: http://toreopsahl.com/ publications/thesis/.
+Opsahl, T. (2009). *Structure and Evolution of Weighted Networks*. University of London (Queen Mary College), London, UK, pp. 104-122. url: http://toreopsahl.com/publications/thesis/.
 
 Pedersen, T.L. (2018). ggraph: An Implementation of Grammar of Graphics for Graphs and Networks. R package version 1.0.2. https://CRAN.R-project.org/package=ggraph
 
