@@ -4,17 +4,29 @@
 
 **Tabla de contenido**
 
-- [1 Introducción](##)
-
+- [1 Introducción](#1 Introducción)
 - [2 Dependencias](#partial-data-dump)
-
 - [3 Cargar la interfaz](#partial-data-dump)
-
 - [4 Importación de datos](#Import)
-
 - [5 Métricas o Estadísticas](#)
 
-  
+
+
+<!--ts-->
+   * [gh-md-toc](#1 Introducción)
+   * [Table of contents](#table-of-contents)
+   * [Installation](#installation)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+<!--te-->
 
 ## **1 Introducción**
 
