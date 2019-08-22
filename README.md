@@ -88,7 +88,7 @@ Figura 1: Interfaz gráfica de usuario
 
 
 
-En la Figura 1 se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de R-Studio donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestan ̃a nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
+En la Figura 1 se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de R-Studio donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestaña nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
 
 En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de funciones tales como la pestaña de ”*File*” que contiene funciones de importación y exportación de datos. La pestaña de ”*Statistics*”, contiene funciones de análisis de datos para las diferentes tipos de redes (binaria, ponderada y bipartita). La pestaña de ”*Simulation*” muestra una ventana con opciones para crear diferentes tipos de redes alimenticias y realizar funciones utilizadas en mundos pequeños. La pestaña de ”*Graphs*” muestra una gama de gráficos que se pueden realizar para los diferentes tipos de redes. Por último la pestaña de ”*Help*” proporciona información general del paquete.
 
@@ -266,15 +266,65 @@ En el caso de las redes ponderadas, el único gráfico incluido además de la re
 
 Figura 13: Gráficos para una red bipartita
 
-En la Figura 14 se muestran los gráficos que se pueden realizar para una red bipartita, el primero es una red de incidencia el cual hace una distinción a través de las figuras para diferencias las filas y columnas de la matriz adyacente, dicho gráfico fue utilizado empleando el paquete **igraph** mediante la función graph.incidence y se puede realizar mediante las pestañas **Graphs> Bipartite Matrix> Network> graph.incidence**. La red bipartita se utilizó empleando el paquete **bipartite** ya que es una forma clara de visualizar las ponderaciones en éste tipo de redes y se puede realizar mediante las pestañas **Graphs> Bipartite Matrix> Plot Web> plotweb**.
+En la Figura 14 se muestran los gráficos que se pueden realizar para una red bipartita, el primero es una red de incidencia el cual hace una distinción a través de las figuras para diferencias las filas y columnas de la matriz adyacente, dicho gráfico fue utilizado empleando el paquete **igraph** mediante la función graph.incidence y se puede realizar mediante las pestañas *Graphs> Bipartite Matrix> Network> graph.incidence*. La red bipartita se utilizó empleando el paquete **bipartite** ya que es una forma clara de visualizar las ponderaciones en éste tipo de redes y se puede realizar mediante las pestañas *Graphs> Bipartite Matrix> Plot Web> plotweb*.
 
-Para la visualización de la modularidad de la red se emplearon dos formas, una mediante un heatmap donde a través de una cuadricula se diferencian los cluster y otra mediante una red con los nodos ordenados respecto al grupo al que pertenecen en el que para diferencias un grupo de otro se utilizó un gama de colores diferentes, ambos gráficos se realizaron empleando el paquete **ggplot2** y se pueden realizar a través de las pestañas **Graphs> Bipartite Matrix> Modularity> ggplot**. En la realización de un gráfico de modularidad primero se tiene que hacer el cálculo en la ventana de estadísticas para una red bipartita el cual empleará la función **bipartite::computeModules**. La ventana del gráfico en vez de mostrar una pestaña con los nombres de las redes bipartitas importadas mostrará el *id* de los resultados de modularidad que estén en los resultados.
-
-
+Para la visualización de la modularidad de la red se emplearon dos formas, una mediante un heatmap donde a través de una cuadricula se diferencian los cluster y otra mediante una red con los nodos ordenados respecto al grupo al que pertenecen en el que para diferencias un grupo de otro se utilizó un gama de colores diferentes, ambos gráficos se realizaron empleando el paquete **ggplot2** y se pueden realizar a través de las pestañas *Graphs> Bipartite Matrix> Modularity> ggplot*. En la realización de un gráfico de modularidad primero se tiene que hacer el cálculo en la ventana de estadísticas para una red bipartita el cual empleará la función **bipartite::computeModules**. La ventana del gráfico en vez de mostrar una pestaña con los nombres de las redes bipartitas importadas mostrará el *id* de los resultados de modularidad que estén en los resultados.
 
 ## **Referencias**
 
 
 
+Butts, C.T. (2015). *network: Classes for Relational Data*. R package version 1.13.0.1. The Statnet Project (http://statnet.org). url: http://CRAN.R-project.org/package=network.
 
+Butts, C.T. (2016). *sna: Tools for Social Network Analysis*. R package version 2.4. url: https://CRAN.R-project.org/package=sna.
+
+ Cohen, J.E. and C.M. Newman (1985). *“A stochastic theory of community food webs I. Models and aggregated data"*. In: Proc. R. Soc. Lond. B 224.1237, pp. 421-448.
+
+Csardi, G. and T. Nepusz (2006). *“The igraph software package for complex network research"*. In: InterJournal Complex Systems, p. 1695. url: http://igraph.org.
+
+Dormann, C.F., B. Gruber, and J. Fruend (2008). *“Introducing the bipartite Package: Analysing Ecological Networks".* In: R News 8.2, pp. 8-11.
+
+Erdos, P. and A. Renyi (1960). *“On the evolution of random graphs"*. In: Publ. Math. Inst. Hung. Acad. Sci 5.1, pp. 17-60.
+
+Goldwasser, L. and J. Roughgarden (1993). *“Construction and analysis of a large Caribbean food web"*. In: Ecology 74.4, pp. 1216-1233.
+
+GTK+ (2007). *The Gimp Tool Kit*. url: http://www.gtk.org/.
+
+Hudson, L., D. Reuman, and R. Emerson (2018). *Cheddar: analysis and visualization of ecological communities*. R package version 0.1-633. url: https://github.com/ quicklizard99/cheddar/.
+
+ Lau, M.K. et al. (2017). *enaR: Tools for Ecological Network Analysis*. R package version
+
+3.0.0. url: https://CRAN.R-project.org/package=enaR.
+
+Lawrence, M. (2017). *cairoDevice: Embeddable Cairo Graphics Device Driver. R package version 2.24.* url: https://CRAN.R-project.org/package=cairoDevice. 
+
+Lawrence, M. and D. Temple (2010). “*RGtk2: A Graphical User Interface Toolkit for R*". In: Journal of Statistical Software 37.8, pp. 1-52. url: http://www.jstatsoft.org/v37/i08/.
+
+Makiyama, K. (2018). *githubinstall: A Helpful Way to Install R Packages Hosted on GitHub*. R package version 0.2.2. url: https://CRAN.R-project.org/package=githubinstall.
+
+Ooms, J. (2018). *writexl: Export Data Frames to Excel 'xlsx' Format. R package version 1.0*. url: https://CRAN.R-project.org/package=writexl.
+
+Opsahl, T. (2009). *Structure and Evolution of Weighted Networks*. University of London (Queen Mary College), London, UK, pp. 104-122. url: http://toreopsahl.com/ publications/thesis/.
+
+Pedersen, T.L. (2018). ggraph: An Implementation of Grammar of Graphics for Graphs and Networks. R package version 1.0.2. https://CRAN.R-project.org/package=ggraph
+
+Ulanowicz, R.E. and C.J. Puccia (1990). “*Mixed trophic impacts in ecosystems*". In: Coenoses, pp. 7{16.
+
+Warnes, G.R. et al. (2016). *gplots: Various R Programming Tools for Plotting Data*. R package version 3.0.1. url: https://CRAN.R-project.org/package=gplots.
+
+Watts, D.J. and S.H. Strogatz (1998). “*Collective dynamics of `small-world'networks*". In: nature 393.6684, p. 440.
+
+Wickham, H. (2007). “*Reshaping data with the reshape package*". In: Journal of Statistical Software 21.12. url: http://www.jstatsoft.org/v21/i12/paper.
+
+Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer-Verlag New York. isbn: 978-3-319-24277-4. url: http://ggplot2.org.
+
+Wickham, H. (2017). *scales: Scale Functions for Visualization.* R package version 0.5.0. url: https://CRAN.R-project.org/package=scales.
+
+Wickham, H. (2018). *pryr: Tools for Computing on the Language*. R package version 0.1.4. url: https://CRAN.R-project.org/package=pryr.
+
+Wickham, H. and J. Bryan (2018). *readxl: Read Excel Files*. R package version 1.1.0. url: https://CRAN.R-project.org/package=readxl.
+
+Wickham, H., J. Hester, and W. Chang (2018). *devtools: Tools to Make Developing R Packages Easier.* R package version 1.13.6. url: https://CRAN.R-project.org/ package=devtools.
+
+Williams, R.J. and N.D. Martinez (2000). “*Simple rules yield complex food webs*". In: Nature 404.6774, p. 180.
 
