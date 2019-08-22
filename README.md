@@ -66,9 +66,9 @@ IAEN()
 
 
 
-| ![alt text](https://github.com/ihuesca/IAEN-Manual/blob/master/GUIimages/GUI.PNG) | ![Data](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Data.PNG) |
+| ![GUI](https://user-images.githubusercontent.com/45604687/63483993-c193b500-c463-11e9-9de2-0c180746af1c.PNG) | ![Data](https://user-images.githubusercontent.com/45604687/63484011-d83a0c00-c463-11e9-90d9-053d3cfac3c9.PNG) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Result](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/Result.PNG) |                                                              |
+| ![Result](https://user-images.githubusercontent.com/45604687/63484041-f0aa2680-c463-11e9-80d5-4ca9e4ba8f51.PNG) |                                                              |
 
 Figura 1: Interfaz gráfica de usuario
 
@@ -102,7 +102,7 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 
 
-![ImportW](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportW.PNG)
+![ImportW](https://user-images.githubusercontent.com/45604687/63484106-30710e00-c464-11e9-9d10-77c0e348e454.PNG)
 
 Figura 2. Ventana para impotar una matriz ponderada
 
@@ -134,7 +134,7 @@ Respecto a la matriz no ponderada las especificaciones son diferentes, entre ell
 
 
 
-![ImportU](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportU.PNG)
+![ImportU](https://user-images.githubusercontent.com/45604687/63484142-4979bf00-c464-11e9-8cc1-7887208d9dc9.PNG)
 
 Figura 3. Ventana para importar una matriz no ponderada
 
@@ -152,7 +152,7 @@ Los pasos a seguir para importar una matriz bipartita son muy parecidos a los de
 
 
 
-![ImportB](/Users/israelhuesca/Desktop/GitHub projects/GUIimages/ImportB.PNG)
+![ImportB](https://user-images.githubusercontent.com/45604687/63484156-5a2a3500-c464-11e9-9aa7-5bd14407ceae.PNG)
 
 Figura 4. Ventana para importar una matriz bipartita
 
@@ -164,6 +164,8 @@ Por otra parte, para importar una matriz adyacente bipartita se deben selecciona
 
 
 
+![StatW](https://user-images.githubusercontent.com/45604687/63484209-7b8b2100-c464-11e9-84a2-bdb4bfa57095.PNG)
+
 Figura 5. Estadísticas para una red ponderada
 
 Para realizar diferentes estadísticas de una red ponderada se tiene que seleccionar las pestañas *Statistics> Weighted*, posteriormente aparecerá la ventana de la *Figura 5*. La pestaña de Weighted se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red ponderada. La ventana está dividida en tres secciones, la sección de ”*General*” que contiene métricas de la red como lo son atributos y análisis de flujos, la sección de ”*Topology*” que contiene un conjunto de centralidades diferentes y el apartado de ”*Ecological Indices*” que contiene indicadores específicos para una red trófica. La Pestaña ”*Name*” muestra el nombre de todas las redes ponderadas que han sido cargadas en la interfaz, se tiene que seleccionar la red con la que se desea realizar los análisis.
@@ -174,7 +176,9 @@ Por último, contiene un conjunto de botones para seleccionar y deseleccionar to
 
 
 
-Figura 6. Estadísticas para una red ponderada
+![StatU](https://user-images.githubusercontent.com/45604687/63484253-9b224980-c464-11e9-80ec-a1fd68a40ba8.PNG)
+
+Figura 6. Estadísticas para una red no ponderada
 
 Para realizar diferentes estadísticos de una red no ponderada hay que seleccionar las pestañas *Statistics> Unweighted* dentro de la interfaz, cabe mencionar que dicha pestaña solo se activa cuando se ha importado una matriz adyacente de éste tipo. La ventana está dividida en tres secciones ”*General*”, ”*Topology*” y ”*Ecological Indices*”. Para el cálculo de atributos se emplearon los paquetes **cheddar**, **igraph** y **network**. En atributos se agregaron tres funciones sencillas, una que calcula el porcentaje de especies herbívoras, otra que muestra el porcentaje de especies que están incluidas en loops o ciclos el cual fue obtenido identificando los nodos incluidos en la diagonal de la multiplicación de la misma matriz *n* veces y por último la proporción de especies que se alimentan de presas de más de un nivel trófico.
 
@@ -182,7 +186,7 @@ En el apartado de ”*Topology*” se muestra un grupo de centralidades así com
 
 La pestanña de ”*Name*” muestra todas las matrices binarias que han sido cargadas a la interfaz de las cuales se tiene que seleccionar alguna para realizar los análisis. Para ver las especificaciones de cada resultado favor de consultar la documentación de **igraph** (Csardi and Nepusz, 2006), **sna** (Butts, 2016), **cheddar** (Hudson et al., 2018) y **network** (Butts, 2015). De la misma forma que en la ventana de la Figura 6 se incluyen botones de seleccionar y deseleccionar las casillas y un botón de aceptar y cancelar, en el que al hacer clic en el botón de aceptar se incluirá un ícono en la parte inferior izquierda que indica que el programa está ejecutando los algoritmos correspondientes y al finalizar aparecerán los resultados en sub-pestañas en el apartado de ”*Result*”.
 
-
+![StatB](https://user-images.githubusercontent.com/45604687/63484288-ad03ec80-c464-11e9-8d9b-2cb8af9994a3.PNG)
 
 Figura 7. Estadísticas para una red bipartita
 
@@ -191,6 +195,8 @@ Para efectuar estadísticos de una red bipartita hay que seleccionar las pestañ
 De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pestaña de ”*Name*” para seleccionar la red con la que se desea ejecutar las funciones y se incluyen botones de seleccionar y deseleccionar las casillas y un boton de aceptar y cancelar con las mismas funcionalidades.
 
 
+
+![Simulation](https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG)
 
 Figura 8. Ventana de simulación
 
@@ -208,10 +214,7 @@ Por otro lado, en la segunda sección se incluye el cálculo de la longitud del 
 
 Los argumentos requeridos en la interfaz gráfica para obtener los parámetros *L* y *C* son el número de nodos, el número de enlaces y el número de repeticiones que se desea realizar para optimizar el resultado. Como resultado se obtiene una tabla con los valores de *L* y *C* de cada una de las repeticiones así como el promedio. Al hacer clic en el botón de aceptar aparecerán los resultados en la pestaña de ”*Result*” a través de sub-pestañas ya sea de la creación de redes alimenticias o de los parámetros de mundos pequeños.
 
-![P1Network](https://user-images.githubusercontent.com/45604687/63476994-bc753c80-c448-11e9-874e-e4cd720396d9.PNG)
 
 
 
 
-
-![ImportB](/Users/israelhuesca/Desktop/Isra/Respaldo%202019/IIB/GUIimages/ImportB.PNG)
