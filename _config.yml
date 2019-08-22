@@ -2,36 +2,6 @@ title: Just the Docs
 description: A Jekyll theme for documentation
 baseurl: "/IAEN-Manual" # the subpath of your site, e.g. /blog
 url: "https://ihuesca.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-https://github.com/ihuesca/IAEN-Manual/
-https://ihuesca.github.io/IAEN-Manual/
 permalink: pretty
 exclude: ["README.md"]
-
-# Enable or disable the site search
-search_enabled: true
-
-# Enable or disable heading anchors
-heading_anchors: true
-
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/ihuesca/IAEN-Manual"
-
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: nil
-
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
-
-plugins:
-  - jekyll-seo-tag
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blank_lines: false
-  profile: false
+remote_theme: owner/name
