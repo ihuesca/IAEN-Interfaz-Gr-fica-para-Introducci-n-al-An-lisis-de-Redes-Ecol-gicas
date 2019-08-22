@@ -1,8 +1,22 @@
-# **IAEN: Interfaz Gráfica para Introducción al Análisis de Redes Ecológicas** 
+# **IAEN: Interfaz Gráfica de Usuario para Introducción al Análisis de Redes Ecológicas**
 
 
 
-## **1 Instroducción**
+**Tabla de contenido**
+
+- [1 Introducción](##)
+
+- [2 Dependencias](#partial-data-dump)
+
+- [3 Cargar la interfaz](#partial-data-dump)
+
+- [4 Importación de datos](#Import)
+
+- [5 Métricas o Estadísticas](#)
+
+  
+
+## **1 Introducción**
 
 
 
@@ -18,7 +32,7 @@ Este documento está destinado a auxiliar al usuario en el funcionamiento de la 
 
 
 
-La lista de dependencias que se requieren para que la interfaz se ejecute correctamente se enlista en la Tabla 1, así como el motivo para la que fueron utilizados. Cabe mencionar que existe una alta dependencia de los paquetes enaR, cheddar y bipartite debido a que son los paquetes que más hacen énfasis en la temática de redes ecológicas, además de que contienen funciones de interés para nuestro objetivo. Sólo algunas funciones fueron implementadas. Respecto a la realización de gráficos algunos de éstos fueron realizados mediante las funciones por defecto de su paquete, mientras que otros fueron efectuados empleando los paquetes ggplot2, gplots y ggraph para mejorar en algunos casos su resolución. 
+La lista de dependencias que se requieren para que la interfaz se ejecute correctamente se enlista en la Tabla 1, así como el motivo para la que fueron utilizados. Cabe mencionar que existe una alta dependencia de los paquetes **enaR**, **cheddar** y **bipartite** debido a que son los paquetes que más hacen énfasis en la temática de redes ecológicas, además de que contienen funciones de interés para nuestro objetivo. Sólo algunas funciones fueron implementadas. Respecto a la realización de gráficos algunos de éstos fueron realizados mediante las funciones por defecto de su paquete, mientras que otros fueron efectuados empleando los paquetes **ggplot2**, **gplots** y **ggraph** para mejorar en algunos casos su resolución. 
 
 
 
@@ -74,7 +88,7 @@ Figura 1: Interfaz gráfica de usuario
 
 
 
-En la *Figura 1* se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de **R-Studio** donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestan ̃a nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
+En la Figura 1 se ilustra la estructura interactiva de la interfaz gráfica cuando ha sido cargada en la consola de R-Studio donde se observa que los elementos que la componen son una barra de menú, una barra de accesos directos para opciones rápidas de importación y exportación de datos, un conjunto de pestañas que incluye una presentación, una pestaña llamada ”*Data*” donde se pueden visualizar los datos que han sido cargados y una pestan ̃a nombrada ”*Result*” donde a través de sub-pestañas se muestran las diferentes salidas de los análisis realizados.
 
 En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de funciones tales como la pestaña de ”*File*” que contiene funciones de importación y exportación de datos. La pestaña de ”*Statistics*”, contiene funciones de análisis de datos para las diferentes tipos de redes (binaria, ponderada y bipartita). La pestaña de ”*Simulation*” muestra una ventana con opciones para crear diferentes tipos de redes alimenticias y realizar funciones utilizadas en mundos pequeños. La pestaña de ”*Graphs*” muestra una gama de gráficos que se pueden realizar para los diferentes tipos de redes. Por último la pestaña de ”*Help*” proporciona información general del paquete.
 
