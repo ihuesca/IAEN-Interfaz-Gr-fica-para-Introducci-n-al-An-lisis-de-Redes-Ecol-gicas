@@ -6,11 +6,11 @@
 
 - [1 Introducción](#1-introducción)
 - [2 Dependencias](#2-dependencias)
-- [3 Cargar la interfaz](#3-Cargar-la-interfaz)
-- [4 Importación de datos](#4-Importación-de-datos)
-- [5 Métricas o Estadísticas](#5-Métricas-o-Estadísticas)
-- [6 Presentación de gráficos](#6-Presentación-de-gráficos)
-- [Referencias](#Referencias)
+- [3 Cargar la interfaz](#3-cargar-la-interfaz)
+- [4 Importación de datos](#4-importación-de-datos)
+- [5 Métricas o Estadísticas](#5-métricas-o-estadísticas)
+- [6 Presentación de gráficos](#6-presentación-de-gráficos)
+- [Referencias](#referencias)
 
 
 
