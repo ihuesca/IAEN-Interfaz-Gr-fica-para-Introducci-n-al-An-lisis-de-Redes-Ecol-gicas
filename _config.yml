@@ -3,6 +3,16 @@ title: [IAEN Manual]
 description: [Spanish version]
 
 # ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+#scheme: Muse
+scheme: Mist
+#scheme: Pisces
+
+
+# ---------------------------------------------------------------
 # Font Settings
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
 # - All fonts set here will have the following styles:
@@ -10,7 +20,7 @@ description: [Spanish version]
 # - Be aware that setting too much fonts will cause site running slowly
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
-font:
+font: Times New Roman OS
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
@@ -20,30 +30,31 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Times New Roman OS
+    family: Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Times New Roman OS
+    family:
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
-    family: Times New Roman OS
+    family:
 
   # Font settings for Logo
   # Fallback to `global` font settings.
   # The `size` option use `px` as unit
   logo:
     external: true
-    family: Times New Roman OS
-    size: 10
+    family:
+    size:
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Times New Roman OS
-    size: 10
+    family:
+    size:
+ 
