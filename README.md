@@ -212,7 +212,4 @@ Los argumentos requeridos en la interfaz gráfica para obtener los parámetros *
 
 
 
-
-
-
-
+![ImportB](/Users/israelhuesca/Desktop/Isra/Respaldo%202019/IIB/GUIimages/ImportB.PNG)
