@@ -101,7 +101,7 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 <br/>
 
-- *Matriz adyacente de una red ponderada*
+- ***Matriz adyacente de una red ponderada***
 
 <br/>
 
@@ -151,7 +151,7 @@ Para poder importar una matriz ponderada dentro de la interfaz se tiene que sele
 
 <br/>
 
-- *Matriz adyacente de una red no ponderada*
+- ***Matriz adyacente de una red no ponderada***
 
 <br/>
 
@@ -173,7 +173,7 @@ Se puede cambiar nombre de la matriz, por defecto Unweighted, dicho nombre servi
 
 <br/>
 
-- *Matriz adyacente de una red bipartita*
+- ***Matriz adyacente de una red bipartita***
 
 <br/>
 
@@ -245,8 +245,11 @@ De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pesta�
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG" alt="Image" width="250" height="361" />
+  
   Figura 8. Ventana de simulación
 </p>
+
+
 
 <br/>
 
