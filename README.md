@@ -107,23 +107,19 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
 
-<br/>
+-- Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
 
-```markdown
-* Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+-- Contener valores numéricos.
 
-* Contener valores numéricos.
+-- Evitar celdas vacías.
 
-* Evitar celdas vacías.
+-- Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
 
-* Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
+-- Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
 
-* Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
+-- La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
 
-* La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
-
-* La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
-```
+-- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
 
 <br/>
 
@@ -145,18 +141,21 @@ Para poder importar una matriz ponderada dentro de la interfaz se tiene que sele
 
 <br/>
 
-- ```
-  - Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
-  - Poner nombre al nuevo objeto, por defecto Weighted.
-  - Los primeros vectores de la matriz aparecerán en la sección de "*Nodes*".
-  - En automático se acomoda el resto de vectores en cada una de las secciones.
-  - "Matrix", "Input "y "Export" son obligatorias, las demás entradas son opcionales.
-  - Verificar con el botón "Check" que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
-  - La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función enaR::balance.
-  - Por último seleccionar el botón "Ok" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "Data".
-  ```
+-- Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
 
-  
+-- Poner nombre al nuevo objeto, por defecto Weighted.
+
+-- Los primeros vectores de la matriz aparecerán en la sección de "*Nodes*".
+
+-- En automático se acomoda el resto de vectores en cada una de las secciones.
+
+-- "*Matrix*", "*Input* "y "*Export*" son obligatorias, las demás entradas son opcionales.
+
+-- Verificar con el botón "*Check*" que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
+
+-- La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función **enaR::balance.**
+
+-- Por último seleccionar el botón "*Ok*" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "*Data*".
 
 <br/>
 
