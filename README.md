@@ -87,7 +87,7 @@ IAEN()
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Result](https://user-images.githubusercontent.com/45604687/63484041-f0aa2680-c463-11e9-80d5-4ca9e4ba8f51.PNG) |                                                              |
 
-Figura 1: Interfaz gráfica de usuario
+Figura 1. Interfaz gráfica de usuario
 
 <br/>
 
@@ -107,19 +107,23 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
 
--- Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+<br/>
 
--- Contener valores numéricos.
+```markdown
+* Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
 
--- Evitar celdas vacías.
+* Contener valores numéricos.
 
--- Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
+* Evitar celdas vacías.
 
--- Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
+* Incluir una columna que especifique los nodos vivos (1) y los no vivos (0).
 
--- La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
+* Vectores de entradas, exportaciones, salidas, respiraciones, biomasas y vivos deben ser colocadas verticalmente a la matriz de adyacencia y en ese orden.
 
--- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
+* La columna "*Outputs*" es la suma de respiraciones y exportaciones, este vector es opcional.
+
+* La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
+```
 
 <br/>
 
@@ -137,21 +141,25 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 Para poder importar una matriz ponderada dentro de la interfaz se tiene que seleccionar las pestañas *`Data> Import> Weighted`*, siguiendo éstos pasos aparecerá una ventana como la Figura 2, donde los elementos que la conforman son un grupo de secciones que tienen la finalidad de mostrar que los vectores cargados estén en el orden adecuado. La funcionalidad de la ventana está resumida en los siguientes pasos:
 
--- Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
+<br/>
 
--- Poner nombre al nuevo objeto, por defecto Weighted.
+```markdown
+* Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
 
--- Los primeros vectores de la matriz aparecerán en la sección de "*Nodes*".
+* Poner nombre al nuevo objeto, por defecto Weighted.
 
--- En automático se acomoda el resto de vectores en cada una de las secciones.
+* Los primeros vectores de la matriz aparecerán en la sección de "*Nodes*".
 
--- "*Matrix*", "*Input* "y "*Export*" son obligatorias, las demás entradas son opcionales.
+* En automático se acomoda el resto de vectores en cada una de las secciones.
 
--- Verificar con el botón *"Check* "que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
+* "*Matrix*", "*Input* "y "*Export*" son obligatorias, las demás entradas son opcionales.
 
--- La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función **enaR::balance**.
+* Verificar con el botón *"Check* "que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
 
--- Por último seleccionar el botón "*Ok*" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "*Data*".
+* La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función **enaR::balance**.
+
+* Por último seleccionar el botón "*Ok*" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "*Data*".
+```
 
 <br/>
 
