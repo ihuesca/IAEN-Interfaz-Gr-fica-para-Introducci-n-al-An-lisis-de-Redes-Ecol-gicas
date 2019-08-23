@@ -133,6 +133,8 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
     <img src="https://user-images.githubusercontent.com/45604687/63484106-30710e00-c464-11e9-9d10-77c0e348e454.PNG" alt="Image" width="300" height="200" />
 </p>
 
+
+
 <p align="center">
  Figura 2. Ventana para importar una matriz ponderada
 </p>
