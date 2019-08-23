@@ -123,7 +123,11 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 <br/>
 
-![ImportW](https://user-images.githubusercontent.com/45604687/63484106-30710e00-c464-11e9-9d10-77c0e348e454.PNG)
+
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484106-30710e00-c464-11e9-9d10-77c0e348e454.PNG" alt="Image" width="300" height="200" />
+</p>
 
 <p align="center">
  Figura 2. Ventana para importar una matriz ponderada
@@ -155,11 +159,13 @@ Para poder importar una matriz ponderada dentro de la interfaz se tiene que sele
 
 <br/>
 
-Respecto a la matriz no ponderada las especificaciones son diferentes, entre ellas se destaca que su estructura es binaria donde los valores que la conforman deben ser numéricos y únicamente se deben incluir valores con ceros y unos donde cero representa ausencia de interacción depredador-presa y uno representa presencia de interacción depredador-presa. Se tiene que evitar valores vacíos y se debe de incluir nombres de filas y columnas donde dichos nombres de preferencia no deben tener espacios y deben ser sim ́etricos. 
+Respecto a la matriz no ponderada las especificaciones son diferentes, entre ellas se destaca que su estructura es binaria donde los valores que la conforman deben ser numéricos y únicamente se deben incluir valores con ceros y unos donde cero representa ausencia de interacción depredador-presa y uno representa presencia de interacción depredador-presa. Se tiene que evitar valores vacíos y se debe de incluir nombres de filas y columnas donde dichos nombres de preferencia no deben tener espacios y deben ser simétricos. 
 
 <br/>
 
-![ImportU](https://user-images.githubusercontent.com/45604687/63484142-4979bf00-c464-11e9-8cc1-7887208d9dc9.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484142-4979bf00-c464-11e9-8cc1-7887208d9dc9.PNG" alt="Image" width="300" height="90" />
+</p>
 
 <p align="center">
  Figura 3. Ventana para importar una matriz no ponderada
@@ -177,11 +183,13 @@ Se puede cambiar nombre de la matriz, por defecto Unweighted, dicho nombre servi
 
 <br/>
 
-Los pasos a seguir para importar una matriz bipartita son muy parecidos a los de una matriz binaria, ya que las especificaciones son: incluir nombres de filas y columnas preferentemente sin espacios, evitar valores vacíos y contener valores numéricos ya sean binarios (ceros y unos) o ponderados. La única diferencia es que puede ser de dimensión pxq ya que éste tipo redes no necesariamente tienen que ser simétricas debido a que no representan interacciones tróficas.
+Los pasos a seguir para importar una matriz bipartita son muy parecidos a los de una matriz binaria, ya que las especificaciones son: incluir nombres de filas y columnas preferentemente sin espacios, evitar valores vacíos y contener valores numéricos ya sean binarios (ceros y unos) o ponderados. La única diferencia es que puede ser de dimensión *pxq* ya que éste tipo redes no necesariamente tienen que ser simétricas debido a que no representan interacciones tróficas.
 
 <br/>
 
-![ImportB](https://user-images.githubusercontent.com/45604687/63484156-5a2a3500-c464-11e9-9aa7-5bd14407ceae.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484156-5a2a3500-c464-11e9-9aa7-5bd14407ceae.PNG" alt="Image" width="300" height="90" />
+</p>
 
 <p align="center">
  Figura 4. Ventana para importar una matriz bipartita
@@ -197,7 +205,9 @@ Por otra parte, para importar una matriz adyacente bipartita se deben selecciona
 
 <br/>
 
-![StatW](https://user-images.githubusercontent.com/45604687/63484209-7b8b2100-c464-11e9-84a2-bdb4bfa57095.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484209-7b8b2100-c464-11e9-84a2-bdb4bfa57095.PNG" alt="Image" width="250" height="362" />
+</p>
 
 <p align="center">
  Figura 5. Estadísticas para una red ponderada
@@ -213,7 +223,9 @@ Por último, contiene un conjunto de botones para seleccionar y deseleccionar to
 
 <br/>
 
-![StatU](https://user-images.githubusercontent.com/45604687/63484253-9b224980-c464-11e9-80ec-a1fd68a40ba8.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484253-9b224980-c464-11e9-80ec-a1fd68a40ba8.PNG" alt="Image" width="250" height="362" />
+</p>
 
 <p align="center">
  Figura 6. Estadísticas para una red no ponderada
@@ -221,7 +233,7 @@ Por último, contiene un conjunto de botones para seleccionar y deseleccionar to
 
 <br/>
 
-Para realizar diferentes estadísticos de una red no ponderada hay que seleccionar las pestañas *Statistics> Unweighted* dentro de la interfaz, cabe mencionar que dicha pestaña solo se activa cuando se ha importado una matriz adyacente de éste tipo. La ventana está dividida en tres secciones ”*General*”, ”*Topology*” y ”*Ecological Indices*”. Para el cálculo de atributos se emplearon los paquetes **cheddar**, **igraph** y **network**. En atributos se agregaron tres funciones sencillas, una que calcula el porcentaje de especies herbívoras, otra que muestra el porcentaje de especies que están incluidas en loops o ciclos el cual fue obtenido identificando los nodos incluidos en la diagonal de la multiplicación de la misma matriz *n* veces y por último la proporción de especies que se alimentan de presas de más de un nivel trófico.
+Para realizar diferentes estadísticos de una red no ponderada hay que seleccionar las pestañas *Statistics> Unweighted* dentro de la interfaz, cabe mencionar que dicha pestaña solo se activa cuando se ha importado una matriz adyacente de éste tipo. La ventana está dividida en tres secciones ”*General*”, ”*Topology*” y ”*Ecological Indices*” (Figura 6). Para el cálculo de atributos se emplearon los paquetes **cheddar**, **igraph** y **network**. En atributos se agregaron tres funciones sencillas, una que calcula el porcentaje de especies herbívoras, otra que muestra el porcentaje de especies que están incluidas en loops o ciclos el cual fue obtenido identificando los nodos incluidos en la diagonal de la multiplicación de la misma matriz *n* veces y por último la proporción de especies que se alimentan de presas de más de un nivel trófico.
 
 En el apartado de ”*Topology*” se muestra un grupo de centralidades así como la función de reachability, las centralidades de betweenness, closeness y degree fueron utilizadas emplendo el paquete **igraph**, mientras que las demás se utilizaron empleando el paquete **sna**. La sección de ”*Ecological Indices*” contiene los cálculos del nivel trófico e indicadores de omnivoría para ello se empleó paquete cheddar, se incluyó un indicador de omnivoría mencionado por Goldwasser and Roughgarden (1993) el cual se basa en la media de las desviaciones estándar de las longitudes de cadena de cada especie hasta una especie basal.
 
@@ -229,7 +241,9 @@ La pestanña de ”*Name*” muestra todas las matrices binarias que han sido ca
 
 <br/>
 
-![StatB](https://user-images.githubusercontent.com/45604687/63484288-ad03ec80-c464-11e9-8d9b-2cb8af9994a3.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63484288-ad03ec80-c464-11e9-8d9b-2cb8af9994a3.PNG" alt="Image" width="250" height="299" />
+</p>
 
 <p align="center">
  Figura 7. Estadísticas para una red bipartita
@@ -245,15 +259,15 @@ De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pesta�
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG" alt="Image" width="250" height="361" />
-  
-  Figura 8. Ventana de simulación
 </p>
 
-
+<p align="center">
+ Figura 8. Ventana de simulación
+</p>
 
 <br/>
 
-Para realizar diferentes funciones de simulación se tienen que seleccionar las pestañas de *Simulations> Simulation*s y así visualizar la ventana mostrada en la Figura 8. La ventana contiene dos secciones una para crear redes alimenticias aleatorias y otra para ejecutar funciones empleadas en redes de mundos pequeños. Posee tres métodos para crear redes alimenticias, el modelo aleatorio, el modelo de cascada y el modelo de nicho, de los cuales se puede calcular los atributos y centralidades, a su vez se puede realizar éste procedimiento *n* veces y como resultado se obtendrá una matriz aleatoria y el promedio de atributos y centralidades de las *n* repeticiones, también se incluye una matriz con el nuúmero de veces que una interacción apareció en una posición específica.
+Para realizar diferentes funciones de simulación se tienen que seleccionar las pestañas de *Simulations> Simulation*s y así visualizar la ventana mostrada en la Figura 8. La ventana contiene dos secciones una para crear redes alimenticias aleatorias y otra para ejecutar funciones empleadas en redes de mundos pequeños. Posee tres métodos para crear redes alimenticias, el modelo aleatorio, el modelo de cascada y el modelo de nicho, de los cuales se puede calcular los atributos y centralidades, a su vez se puede realizar éste procedimiento *n* veces y como resultado se obtendrá una matriz aleatoria y el promedio de atributos y centralidades de las *n* repeticiones, también se incluye una matriz con el número de veces que una interacción apareció en una posición específica.
 
 Los modelos de redes alimenticias poseen como argumento el número de nodos o especies, el valor de la conectividad en una escala de 0 a 1 y un valor de porcentaje de tolerancia que hace referencia al intervalo de aceptación para la conectividad, es decir, en cada simulación la función sólo incluye redes que estén en ese intervalo del parámetro con la finalidad de que el parámetro sea consistente, tal como se menciona en Williams and Martinez (2000), por defecto 3%.
 
@@ -307,9 +321,13 @@ En la Figura 10 se muestran los gráficos que se pueden realizar para una red po
 
 <br/>
 
-![P5Impact](https://user-images.githubusercontent.com/45604687/63557009-839e9b80-c50c-11e9-947f-46b36c5b05ad.PNG)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/45604687/63557009-839e9b80-c50c-11e9-947f-46b36c5b05ad.PNG" alt="Image" width="325" height="221" />
+</p>
 
-Figura 11. Gráfico de impacto para una red ponderada
+<p align="center">
+ Figura 11. Gráfico de impacto para una red ponderada
+</p>
 
 <br/>
 
