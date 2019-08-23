@@ -107,7 +107,7 @@ En la barra de menú se muestran diferentes pestañas agrupadas por el tipo de f
 
 Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la que se requiere que estén organizados los datos. Dicha estructura está basada en los argumentos de entrada requeridos en la función **enaR::pack** para crear un objeto de clase red y para poder cargarla y visualizarla en la interfaz interactiva se requieren las siguientes especificaciones:
 
-- Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
+-- Nombres de matriz de adyacencia iguales para filas y columnas, preferentemente no numérica y sin espacios.
 
 -- Contener valores numéricos.
 
