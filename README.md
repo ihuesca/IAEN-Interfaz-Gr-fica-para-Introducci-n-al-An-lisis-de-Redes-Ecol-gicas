@@ -226,15 +226,26 @@ La pestanña de ”*Name*” muestra todas las matrices binarias que han sido ca
 
 Para efectuar estadísticos de una red bipartita hay que seleccionar las pestañas *Statistics>Bipartite*, dicha pestaña se activará solo cuando se haya importado en la interfaz una matriz adyacente de una red bipartita. Al hacer clic en las pestañas anteriores apare-cerá una ventana como la de la Figura 7. La ventana está seccionada en dos partes, la primera contiene atributos generales de la red y la segunda llamada ”*Topology*” contiene funciones más específicas, ambos apartados incluyen funciones del paquete **bipartite** (Dormann et al., 2008) por lo que para conocer el contenido de cada indicador favor de revisar la descripción de las funciones en su documentación.
 
-De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pestaña de ”*Name*” para seleccionar la red con la que se desea ejecutar las funciones y se incluyen botones de seleccionar y deseleccionar las casillas y un boton de aceptar y cancelar con las mismas funcionalidades.
+De la misma forma que en las ventanas de las Figuras 6 y 7 se incluye una pestaña de ”*Name*” para seleccionar la red con la que se desea ejecutar las funciones y se incluyen botones de seleccionar y deseleccionar las casillas y un botón de aceptar y cancelar con las mismas funcionalidades.
 
 
 
-![Simulation](https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG)
+
 
 <p align="center">
- Figura 8. Ventana de simulación
+    <img src="https://user-images.githubusercontent.com/45604687/63484313-c311ad00-c464-11e9-8368-c59b880b0534.PNG" alt="Image" width="320" height="431" />
+  Figura 8. Ventana de simulación
 </p>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
 
 Para realizar diferentes funciones de simulación se tienen que seleccionar las pestañas de *Simulations> Simulation*s y así visualizar la ventana mostrada en la Figura 8. La ventana contiene dos secciones una para crear redes alimenticias aleatorias y otra para ejecutar funciones empleadas en redes de mundos pequeños. Posee tres métodos para crear redes alimenticias, el modelo aleatorio, el modelo de cascada y el modelo de nicho, de los cuales se puede calcular los atributos y centralidades, a su vez se puede realizar éste procedimiento *n* veces y como resultado se obtendrá una matriz aleatoria y el promedio de atributos y centralidades de las *n* repeticiones, también se incluye una matriz con el nuúmero de veces que una interacción apareció en una posición específica.
 
