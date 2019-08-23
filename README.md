@@ -347,7 +347,7 @@ Figura 12. Gráficos para una red bipartita
 
 En la Figura 12 se muestran los gráficos que se pueden realizar para una red bipartita, el primero es una red de incidencia el cual hace una distinción a través de las figuras para diferencias las filas y columnas de la matriz adyacente, dicho gráfico fue utilizado empleando el paquete **igraph** mediante la función graph.incidence y se puede realizar mediante las pestañas *`Graphs> Bipartite Matrix> Network> graph.incidence`*. La red bipartita se utilizó empleando el paquete **bipartite** ya que es una forma clara de visualizar las ponderaciones en éste tipo de redes y se puede realizar mediante las pestañas *`Graphs> Bipartite Matrix> Plot Web> plotweb`*.
 
-Para la visualización de la modularidad de la red se emplearon dos formas, una mediante un heatmap donde a través de una cuadricula se diferencian los cluster y otra mediante una red con los nodos ordenados respecto al grupo al que pertenecen en el que para diferencias un grupo de otro se utilizó un gama de colores diferentes, ambos gráficos se realizaron empleando el paquete **ggplot2** y se pueden realizar a través de las pestañas *`Graphs> Bipartite Matrix> Modularity> ggplot`*. En la realización de un gráfico de modularidad primero se tiene que hacer el cálculo en la ventana de estadísticas para una red bipartita el cual empleará la función **bipartite::computeModules**. La ventana del gráfico en vez de mostrar una pestaña con los nombres de las redes bipartitas importadas mostrará el *id* de los resultados de modularidad que estén en los resultados. [(Hola, 1955)][1]
+Para la visualización de la modularidad de la red se emplearon dos formas, una mediante un heatmap donde a través de una cuadricula se diferencian los cluster y otra mediante una red con los nodos ordenados respecto al grupo al que pertenecen en el que para diferencias un grupo de otro se utilizó un gama de colores diferentes, ambos gráficos se realizaron empleando el paquete **ggplot2** y se pueden realizar a través de las pestañas *`Graphs> Bipartite Matrix> Modularity> ggplot`*. En la realización de un gráfico de modularidad primero se tiene que hacer el cálculo en la ventana de estadísticas para una red bipartita el cual empleará la función **bipartite::computeModules**. La ventana del gráfico en vez de mostrar una pestaña con los nombres de las redes bipartitas importadas mostrará el *id* de los resultados de modularidad que estén en los resultados. 
 
 <br/>
 
@@ -355,7 +355,7 @@ Para la visualización de la modularidad de la red se emplearon dos formas, una 
 
 <br/>
 
-[1]: Butts, C.T. (2015). *network: Classes for Relational Data*. R package version 1.13.0.1. The Statnet Project ([http://statnet.org](http://statnet.org)). url: [http://CRAN.R-project.org/package=network](http://CRAN.R-project.org/package=network).
+Butts, C.T. (2015). *network: Classes for Relational Data*. R package version 1.13.0.1. The Statnet Project ([http://statnet.org](http://statnet.org)). url: [http://CRAN.R-project.org/package=network](http://CRAN.R-project.org/package=network).
 
 Butts, C.T. (2016). *sna: Tools for Social Network Analysis*. R package version 2.4. url: [https://CRAN.R-project.org/package=sna](https://CRAN.R-project.org/package=sna).
 
