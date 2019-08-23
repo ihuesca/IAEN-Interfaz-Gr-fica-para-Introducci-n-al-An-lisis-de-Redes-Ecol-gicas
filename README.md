@@ -143,7 +143,7 @@ Para poder importar una matriz ponderada dentro de la interfaz se tiene que sele
 
 <br/>
 
-```markdown
+```latex
 * Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
 
 * Poner nombre al nuevo objeto, por defecto Weighted.
@@ -152,13 +152,13 @@ Para poder importar una matriz ponderada dentro de la interfaz se tiene que sele
 
 * En automático se acomoda el resto de vectores en cada una de las secciones.
 
-* "*Matrix*", "*Input* "y "*Export*" son obligatorias, las demás entradas son opcionales.
+* "Matrix", "Input "y "Export" son obligatorias, las demás entradas son opcionales.
 
-* Verificar con el botón *"Check* "que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
+* Verificar con el botón "Check" que todos los vectores están importados correctamente, en caso de ser incorrecto se mostrará una ventana emergente con la lista de errores encontrados, posteriormente revise el formato de entrada de los datos para corregir los detalles.
 
-* La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función **enaR::balance**.
+* La pestaña de balanceo se activará sólo en caso de que la matriz y los vectores restantes no estén balanceados, de ser el caso seleccionar el tipo de balanceo que se quiera ejecutar, dicha función está retomada de la función enaR::balance.
 
-* Por último seleccionar el botón "*Ok*" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "*Data*".
+* Por último seleccionar el botón "Ok" para que diferentes objetos sea creados y puedan ser utilizados cuando sea necesario, a su vez se imprimirán los datos en la pestaña de "Data".
 ```
 
 <br/>
