@@ -135,7 +135,7 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 <br/>
 
-Para poder importar una matriz ponderada dentro de la interfaz se tiene que seleccionar las pestañas *Data> Import> Weighted*, siguiendo éstos pasos aparecerá una ventana como la Figura 2, donde los elementos que la conforman son un grupo de secciones que tienen la finalidad de mostrar que los vectores cargados estén en el orden adecuado. La funcionalidad de la ventana está resumida en los siguientes pasos:
+Para poder importar una matriz ponderada dentro de la interfaz se tiene que seleccionar las pestañas *`Data> Import> Weighted`*, siguiendo éstos pasos aparecerá una ventana como la Figura 2, donde los elementos que la conforman son un grupo de secciones que tienen la finalidad de mostrar que los vectores cargados estén en el orden adecuado. La funcionalidad de la ventana está resumida en los siguientes pasos:
 
 -- Buscar el archivo a través del botón "*Import*", donde se podrá elegir archivos con formato Excel (.xls), Excel delimitado por comas (.csv) o texto (.txt).
 
