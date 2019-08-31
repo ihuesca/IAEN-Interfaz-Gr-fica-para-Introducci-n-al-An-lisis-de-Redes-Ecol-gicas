@@ -121,7 +121,7 @@ Antes de cargar una matriz ponderada hay que tener en cuenta la estructura en la
 
 -- La matriz adyacente, el vector de entradas, exportaciones y el vector de vivos son obligatorios, los demás pueden o no considerarse. En caso de no considerarlos incluir un vector de ceros para evitar valores vacíos.
 
---En el orden de los datos se coloca primero la matriz adyacente, posteriormente en las columnas las entradas (inputs), exportaciones (Exports), salidas (Outputs), respiraciones (Respiration), biomasas (Storage) e indicador de nodos vinos o no vivos (Living).
+--En el orden de los datos se coloca primero la matriz adyacente, posteriormente en las columnas siguientes las entradas (Inputs), exportaciones (Exports), salidas (Outputs), respiraciones (Respiration), biomasas (Biomass) e indicador de nodos vinos o no vivos (Living).
 
 <br/>
 
